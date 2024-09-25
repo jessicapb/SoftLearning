@@ -1,0 +1,166 @@
+*{
+    margin: 0rem; /* 0px */
+    padding: 0rem; /* 0px */
+    box-sizing: border-box;
+}
+
+:root{
+    --fonsheader: #F9E79F; 
+    --voracapses: black;
+    --fonsbotons: #AED6F1;
+    --fonsinput: #E5E7E9;
+}
+
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    background-color: var(--fonsheader);
+    height: 4.375rem; /* 70px */
+}
+
+.header__títol{
+    font-family: "Public Sans", sans-serif;
+    color: var(--voracapses);
+    font-size: 1.563rem; /* 25px */
+    padding: 1.25rem; /* 20px */
+}
+
+/* Ubicació */
+.ubi{
+    display: flex;
+    align-items: center;
+    margin: 1.25rem; /* 20px */
+}
+
+.ubi__text{
+    font-family: "Oxygen", sans-serif;
+    color:var(--voracapses);
+    font-size: 1.25rem; /* 20px */
+    text-decoration: none;
+}
+
+.ubi__img{
+    width: 1.875rem; /* 30px */
+    height: 1.875rem; /* 30px */
+}
+
+.ubi__text--ubi{
+    font-family: "Oxygen", sans-serif;
+    color:var(--voracapses);
+    font-size: 1.25rem; /* 20px */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Títol */
+.títol{
+    font-family: "Jost", sans-serif;
+    font-size: 1.563rem; /* 25px */
+    text-align: center;
+    color: var(--voracapses);
+    margin-bottom: 0.938rem; /* 15px */
+}
+
+/* General */
+.general{
+    display: flex;
+    justify-content: center;
+}
+
+.subgeneral{
+    border: 0.125rem var(--voracapses) solid; /* 2px */
+    border-radius: 0.25rem; /* 4px */
+    width: 40%;
+    height: 100%;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Formulari */
+.formulari{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulari__text{
+    font-family: "Work Sans", sans-serif;
+    color: var(--voracapses);
+    font-size: 1.063rem; /* 17px */
+    margin-left: 1.25rem; /* 20px */
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.formulari__omplir{
+    width: 90%;
+    border-radius: 0.25rem; /* 4px */
+    outline: none;
+    border: none;
+    background-color: var(--fonsinput);
+    padding: 0.625rem; /* 10px */
+    margin-left: 1.25rem; /* 20px */
+}
+
+::placeholder{
+    font-size: 0.875rem; /* 14px */
+    color: var(--voracapses);
+}
+
+/* Check */
+.check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.check__omplir{
+    margin-left: 0.313rem; /* 5px */
+}
+
+/* Botó */
+.bt{
+    display: flex;
+    justify-content: center;
+}
+
+.bt__bt{
+    /* Botó */
+    background-color: var(--fonsbotons);
+    width: 9.063rem; /* 145px */
+    height: 2.813rem; /* 45px */
+    margin: 0.938rem; /* 15px */
+    border-radius: 0.25rem; /* 4px */
+    outline: none;
+    border: none;
+    /* Text */
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    color: var(--voracapses);
+    text-align: center;
+    font-size: 0.938rem; /* 15px */
+}
+
+.bt__bt:hover{
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: var(--fonsheader);
+    height: 4.375rem; /* 70px */
+}
+
+.footer__text{
+    font-family: "Public Sans", sans-serif;
+    color: var(--voracapses);
+    font-size: 1.188rem; /* 19px */
+    padding: 1.25rem; /* 20px */
+}
+
+#baix{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
