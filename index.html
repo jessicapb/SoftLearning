@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftLearning</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegació -->
+    <header>
+        <nav class="header">
+            <h1 class="header__títol">SoftLearning</h1>
+        </nav>
+    </header>
+
+    <!-- Formularis -->
+    <main class="general">
+        <h3 class="general__títol">Escull el formulari que vols accedir</h3>
+        <!-- Stakeholders -->
+        <article>
+            <h4 class="product__títol">PERSONAL</h4>
+            <!-- Client -->
+            <div class="product">
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Stakeholder/client.png" alt="">
+                    <p class="subproduct__text">Client:</p>
+                    <div class="bt">
+                        <button onclick="location.href='views/client/clientguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+                
+                <!-- Empresa client -->
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Stakeholder/empresa.png" alt="">
+                    <p class="subproduct__text">Empresa client:</p>
+                    <div class="bt">
+                        <button  onclick="location.href='views/clientCompany/clientCompanyguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+
+                <!-- Empleat -->
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Stakeholder/empleat.png" alt="">
+                    <p class="subproduct__text">Empleat:</p>
+                    <div class="bt">
+                        <button  onclick="location.href='views/employee/employeeguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+
+                <!-- Proveïdor -->
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Stakeholder/proveïdor.png" alt="">
+                    <p class="subproduct__text">Proveïdor:</p>
+                    <div class="bt">
+                        <button  onclick="location.href='views/provider/providerguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Product -->
+        <article>
+            <h4 class="product__títol">PRODUCTES</h4>
+            <!-- Llibres -->
+            <div class="product">
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Product/book.png" alt="">
+                    <p class="subproduct__text">Llibres:</p>
+                    <div class="bt">
+                        <button onclick="location.href='views/book/bookguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+                
+                <!-- Cursos -->
+                <div class="subproduct">
+                    <img class="subproduct__img" src="img/Product/curs_virtual.png" alt="">
+                    <p class="subproduct__text">Curs online:</p>
+                    <div class="bt">
+                        <button  onclick="location.href='views/course/courseguia.html'" class="bt__bt">Accedir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">Copyright © 2024 SoftLearning</p>
+    </footer>
+</body>
+</html>
