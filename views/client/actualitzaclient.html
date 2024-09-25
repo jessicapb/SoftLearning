@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actualitzar Client</title>
+        <link rel="stylesheet" href="../../css/Product/product.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navegació -->
+        <header>
+            <nav class="header">
+                <h1 class="header__títol">SoftLearning</h1>
+            </nav>
+        </header>
+        <!-- Formulari -->
+        <main>
+            <div class="ubi">
+                <a class="ubi__text" href="../../index.html">Inici</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text" href="clientguia.html">Client Guia</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text--ubi" href="actualitzaclient.html">Actualitzar Client</a>
+            </div>
+            <article>
+                <h4 class="títol">ACTUALITZAR CLIENT</h4>
+                <div class="general">
+                    <div class="subgeneral">
+                        <form class="formulari" action="../../controllers/client/UpdateClientController.php" method="POST">    
+                            <label class="formulari__text">Nom:</label>                    
+                            <input class="formulari__omplir" type="text" name="nom" placeholder="introdueix el nom del client">
+                            <label class="formulari__text">Cognoms:</label>                    
+                            <input class="formulari__omplir" type="text" name="cognoms" placeholder="introdueix els cognoms del client">
+                            <label class="formulari__text">Email:</label>                    
+                            <input class="formulari__omplir" type="email" name="email" placeholder="introdueix el correu electrònic del client">
+                            <label class="formulari__text">Número de telèfon:</label>                    
+                            <input class="formulari__omplir" type="text" name="telefon" placeholder="introdueix el telèfon del client. Comença per: 34 6">
+                            <label class="formulari__text">Adreça:</label>                    
+                            <input class="formulari__omplir" type="text" name="adreca" placeholder="introdueix l'adreça del client">
+                            <label class="formulari__text">Aniversari:</label>                    
+                            <input class="formulari__omplir" type="text" name="aniversari" placeholder="introdueix l'aniversari del client">
+                            <label class="formulari__text">Número de soci:</label>                    
+                            <input class="formulari__omplir" type="number" name="soci" placeholder="introdueix el número de soci">
+                            <label class="formulari__text">Mètode de pagament:</label>               
+                            <input class="formulari__omplir" type="text" name="pagament" placeholder="introdueix el mètode de pagament del client">
+                            <div class="bt">
+                                <input class="bt__bt" type="submit" value="ACTUALITZAR">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__text">Copyright © 2024 SoftLearning</p>
+        </footer>
+    </body>
+</html>

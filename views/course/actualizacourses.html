@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualitzar Courses</title>
+    <link rel="stylesheet" href="../../css/Product/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegació -->
+    <header>
+        <nav class="header">
+            <h1 class="header__títol">SoftLearning</h1>
+        </nav>
+    </header>
+
+    <!-- Formularis -->
+    <main>
+        <section class="ubi">
+            <a class="ubi__text" href="../../index.html">Inici</a>
+            <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+            <a class="ubi__text" href="courseguia.html">Curs Guia</a>
+            <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+            <a class="ubi__text--ubi" href="actualizacourses.html">Actualitzar Cursos</a>
+        </section>
+
+        <article>
+            <h4 class="títol">ACTUALITZAR CURS</h4>
+            <div class="general">
+                <div class="subgeneral">
+                    <form class="formulari" action="../../controllers/course/UpdateCourseController.php" method="POST">
+                        <label class="formulari__text">Codi del producte:</label>                    
+                        <input class="formulari__omplir" type="number" name="codi" placeholder="introdueix el codi del curs"/>
+                        <label class="formulari__text">Preu:</label>                    
+                        <input class="formulari__omplir" type="number" name="preu" placeholder="introdueix el preu del curs"/>
+                        <label class="formulari__text">Descripció:</label>                    
+                        <input class="formulari__omplir" type="text" name="descripció" placeholder="introdueix la descripció del curs"/>
+                        <label class="formulari__text">Hores:</label>                    
+                        <input class="formulari__omplir" type="number" name="hores" placeholder="introdueix les hores del curs"/>
+                        <label class="formulari__text">Departament:</label>                    
+                        <input class="formulari__omplir" type="text" name="departament" placeholder="introdueix el departament del curs"/>
+                        <div class="bt">
+                            <input class="bt__bt" type="submit" value="ACTUALITZAR"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__text">Copyright © 2024 SoftLearning</p>
+    </footer>
+</body>
+</html>

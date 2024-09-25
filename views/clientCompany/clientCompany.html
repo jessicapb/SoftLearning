@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Empresa client</title>
+        <link rel="stylesheet" href="../../css/Product/product.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navegació -->
+        <header>
+            <nav class="header">
+                <h1 class="header__títol">SoftLearning</h1>
+            </nav>
+        </header>
+        <!-- Formulari -->
+        <main>
+            <div class="ubi">
+                <a class="ubi__text" href="../../index.html">Inici</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text" href="clientCompanyguia.html">Empresa client</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text--ubi" href="clientCompany.html">Afegir Empresa client</a>
+            </div>
+            <article>
+                <h4 class="títol">AFEGIR EMPRESA CLIENT</h4>
+                <div class="general">
+                    <div class="subgeneral">
+                        <form class="formulari" action="../../controllers/clientCompany/ClientCompanyController.php" method="POST">    
+                            <label class="formulari__text">Nom:</label>                    
+                            <input class="formulari__omplir" type="text" name="nom" placeholder="introdueix el nom de l'empresa client">
+                            <label class="formulari__text">Cognoms:</label>                    
+                            <input class="formulari__omplir" type="text" name="cognoms" placeholder="introdueix els cognoms de l'empresa client">
+                            <label class="formulari__text">Email:</label>                    
+                            <input class="formulari__omplir" type="email" name="email" placeholder="introdueix el correu electrònic de l'empresa client">
+                            <label class="formulari__text">Número de telèfon:</label>                    
+                            <input class="formulari__omplir" type="text" name="telefon" placeholder="introdueix el telèfon de l'empresa client. Comença per: 34 6">
+                            <label class="formulari__text">Adreça:</label>                    
+                            <input class="formulari__omplir" type="text" name="adreca" placeholder="introdueix l'adreça de l'empresa client">
+                            <label class="formulari__text">Antiguitat:</label>                    
+                            <input class="formulari__omplir" type="text" name="antiguitat" placeholder="introdueix l'aniversari de l'empresa client">
+                            <label class="formulari__text">Número de l'empresa:</label>                    
+                            <input class="formulari__omplir" type="number" name="empresa" placeholder="introdueix el número de l'empresa client">
+                            <label class="formulari__text">Tipus de pagament:</label>               
+                            <input class="formulari__omplir" type="text" name="pagament" placeholder="introdueix el tipus de pagament de l'empresa client">
+                            <label class="formulari__text">Treballadors:</label>                    
+                            <input class="formulari__omplir" type="number" name="treballadors" placeholder="introdueix els treballadors de l'empresa client">
+                            <label class="formulari__text">Tipus d'empresa:</label>                    
+                            <input class="formulari__omplir" type="text" name="tipus" placeholder="introdueix el tipus d'empresa client">
+                            <div class="bt">
+                                <input class="bt__bt" type="submit" value="ENVIAR">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__text">Copyright © 2024 SoftLearning</p>
+        </footer>
+    </body>
+</html>

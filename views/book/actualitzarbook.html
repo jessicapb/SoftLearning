@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actualitzar Books</title>
+        <link rel="stylesheet" href="../../css/Product/product.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navegació -->
+        <header>
+            <nav class="header">
+                <h1 class="header__títol">SoftLearning</h1>
+            </nav>
+        </header>
+        <!-- Formulari -->
+        <main>
+            <div class="ubi">
+                <a class="ubi__text" href="../../index.html">Inici</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text" href="bookguia.html">Llibre Guia</a>
+                <img class="ubi__img" src="../../img/Formularis/fletxa.png" alt="fletxa">
+                <a class="ubi__text--ubi" href="actualitzarbook.html">Actualitzar Llibre</a>
+            </div>
+            <article>
+                <h4 class="títol">ACTUALITZAR LLIBRE</h4>
+                <div class="general">
+                    <div class="subgeneral">
+                        <form class="formulari" action="../../controllers/book/UpdateBookController.php" method="POST">    
+                            <label class="formulari__text">Codi del producte:</label>                    
+                            <input class="formulari__omplir" type="number" name="codi" placeholder="introdueix el codi del llibre">
+                            <label class="formulari__text">Preu:</label>                    
+                            <input class="formulari__omplir" type="number" name="preu" placeholder="introdueix el preu del llibre">
+                            <label class="formulari__text">Descripció:</label>                    
+                            <input class="formulari__omplir" type="text" name="descripció" placeholder="introdueix la descripció del llibre">
+                            <label class="formulari__text">Autor / Autora:</label>                    
+                            <input class="formulari__omplir" type="text" name="autor" placeholder="introdueix l'autor del llibre">
+                            <label class="formulari__text">Títol:</label>                    
+                            <input class="formulari__omplir" type="text" name="titol" placeholder="introdueix el títol del llibre">
+                            <label class="formulari__text">Tapa:</label>                    
+                            <input class="formulari__omplir" type="text" name="tapa" placeholder="introdueix la tapa del llibre">
+                            <label class="formulari__text">Pàgines:</label>                    
+                            <input class="formulari__omplir" type="number" name="pagines" placeholder="introdueix les pàgines del llibre">
+                            <label class="formulari__text">Gènere:</label>                    
+                            <input class="formulari__omplir" type="text" name="genere" placeholder="introdueix el gènere del llibre">
+                            <label class="formulari__text">Editorial:</label>                    
+                            <input class="formulari__omplir" type="text" name="editorial" placeholder="introdueix l'editorial del llibre">
+                            <label class="formulari__text">ISBN:</label>                    
+                            <input class="formulari__omplir" type="number" name="isbn" placeholder="introdueix l'ISBN del llibre: Comença per (978)+(10 dígits)">
+                            <label class="formulari__text">Altura:</label>                    
+                            <input class="formulari__omplir" type="number" name="altura" placeholder="introdueix l'altura del llibre">
+                            <label class="formulari__text">Amplada:</label>                    
+                            <input class="formulari__omplir" type="number" name="amplada" placeholder="introdueix l'amplada del llibre">
+                            <label class="formulari__text">Longitud:</label>                    
+                            <input class="formulari__omplir" type="number" name="longitud" placeholder="introdueix la longitud del llibre">
+                            <label class="formulari__text">Pes:</label>                    
+                            <input class="formulari__omplir" type="number" name="pes" placeholder="introdueix el pes del llibre">
+                            <div class="bt">
+                                <input class="bt__bt" type="submit" value="ACTUALITZAR">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer__text">Copyright © 2024 SoftLearning</p>
+        </footer>
+    </body>
+</html>
